@@ -1,6 +1,4 @@
 from typing import TypedDict
-from urllib.request import Request
-
 from httpx import Response, QueryParams
 from clients.http.client import HTTPClient
 
@@ -17,7 +15,7 @@ class MakeOperationRequestDict(TypedDict):
     Структура данных для создания операции комиссии.
     """
     status: str
-    amount: str
+    amount: float
     cardId: str
     accountId: str
 
