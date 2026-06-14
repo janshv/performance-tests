@@ -14,14 +14,12 @@ print('Create user response:', create_user_response)
 
 
 # Открытие дебетового счета
-open_debit_card_account_response = accounts_gateway_client.open_debit_card_account(
-    user_id=create_user_response['user']['id']
-)
+open_debit_card_account_response = accounts_gateway_client.open_debit_card_account(user_id=create_user_response.user.id)
 print('Open debit card account response:', open_debit_card_account_response)
 
 
 # Пополнение счёта
-card_id = open_debit_card_account_response['account']['cards'][0]['id']
-account_id = open_debit_card_account_response['account']['id']
+card_id = open_debit_card_account_response.account.cards[0].id
+account_id = open_debit_card_account_response.account.id
 top_up_account_response = operations_gateway_client.make_top_up_operation(card_id, account_id)
 print("Make top up operation response:", top_up_account_response)
