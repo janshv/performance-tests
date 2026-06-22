@@ -29,9 +29,9 @@ result = builder.build(
     )
 )
 
-# Шаг 3. Сохраняем результат сидинга в файл, привязанный к сценарию "test-scenario"
-save_seeds_result(result=result, scenario="test-scenario")
+# Шаг 3. Сохраняем результат сидинга в файл, привязанный к сценарию "test-scenario.py"
+save_seeds_result(result=result, scenario="test-scenario.py")
 
 # Шаг 4. Загружаем данные из файла и выводим в консоль
-print(load_seeds_result(scenario="test-scenario"))
+print(load_seeds_result(scenario="test-scenario.py"))
 

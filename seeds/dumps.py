@@ -15,7 +15,7 @@ def save_seeds_result(result: SeedsResult, scenario: str):
     if not os.path.exists("dumps"):
         os.mkdir("dumps")
 
-    # Сохраняем результат сидинга в файл с именем {scenario}_seeds.json
+    # Сохраняем результат сидинга в файл с именем {scenario.py}_seeds.json
     with open(f"./dumps/{scenario}_seeds.json", 'w+', encoding="utf-8") as file:
         file.write(result.model_dump_json())
 
