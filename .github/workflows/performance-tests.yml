@@ -36,7 +36,7 @@ jobs:
     steps:
       # 1. Клонируем репозиторий, в котором находится YAML-файл
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # 2. Устанавливаем Python (используется в Locust)
       - name: Set up Python
@@ -97,10 +97,13 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+          path: gh-pages
 
       - name: Download report artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: test-report-${{ github.run_id }}
           path: ./reports/${{ github.run_id }}
