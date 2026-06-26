@@ -105,7 +105,7 @@ jobs:
       - name: Download report artifact
         uses: actions/download-artifact@v8
         with:
-          name: test-report-${{ github.run_id }}
+          name: reports${{ github.run_id }}
           path: ./reports/${{ github.run_id }}
 
       - name: Deploy HTML report to GitHub Pages
