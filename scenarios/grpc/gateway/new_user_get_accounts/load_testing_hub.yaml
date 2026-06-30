@@ -6,7 +6,7 @@ scenario:
   name: "new_user_get_accounts"
   file: "./scenarios/grpc/gateway/new_user_get_accounts/v1.0.conf"
   version: "v1.0"
-  number_of_users: 100
+  number_of_users: 200
   runtime_duration: "2m"
 csv_locust_stats_file: "locust_grpc_gateway_new_user_get_accounts_stats.csv"
 json_locust_ratio_file: "locust_grpc_gateway_new_user_get_accounts_ratio.json"

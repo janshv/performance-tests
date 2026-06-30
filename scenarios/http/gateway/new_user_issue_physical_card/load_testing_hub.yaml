@@ -6,7 +6,7 @@ scenario:
   name: "new_user_issue_physical_card"
   file: "./scenarios/http/gateway/new_user_issue_physical_card/v1.0.conf"
   version: "v1.0"
-  number_of_users: 100
+  number_of_users: 200
   runtime_duration: "2m"
 csv_locust_stats_file: "locust_http_gateway_new_user_issue_physical_card_stats.csv"
 json_locust_ratio_file: "locust_http_gateway_new_user_issue_physical_card_ratio.json"

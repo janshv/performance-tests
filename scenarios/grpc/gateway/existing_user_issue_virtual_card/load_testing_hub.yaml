@@ -6,7 +6,7 @@ scenario:
   name: "existing_user_issue_virtual_card"
   file: "./scenarios/grpc/gateway/existing_user_issue_virtual_card/v1.0.conf"
   version: "v1.0"
-  number_of_users: 100
+  number_of_users: 200
   runtime_duration: "2m"
 csv_locust_stats_file: "locust_grpc_gateway_existing_user_issue_virtual_card_stats.csv"
 json_locust_ratio_file: "locust_grpc_gateway_existing_user_issue_virtual_card_ratio.json"
